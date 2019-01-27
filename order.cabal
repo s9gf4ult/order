@@ -16,11 +16,11 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   ghc-options:         -Wall
-  exposed-modules:     Lib
+  exposed-modules:     Order.Project
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 
-executable order-exe
+executable order
   hs-source-dirs:      app
   main-is:             Main.hs
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
@@ -28,7 +28,7 @@ executable order-exe
                      , order
   default-language:    Haskell2010
 
-test-suite order-test
+test-suite test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs

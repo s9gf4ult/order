@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import           Order.Project
 
 main :: IO ()
-main = someFunc
+main = return ()
